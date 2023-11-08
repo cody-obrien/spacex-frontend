@@ -1,18 +1,20 @@
 import "./Card.css";
 
-export default function Card(item, type) {
+export default function Card({ data, type }) {
   return (
     <div className="card">
-      <div className="card__title">{item.name}</div>
+      <div className="card__title">{data.name}</div>
       <img
         className="card__image"
         src={
-          type === "launch" ? item.flickr.original[0] : item.flickr_images[0]
+          type === "launch"
+            ? data.links.flickr.original[0]
+            : data.flickr_images[0]
         }
       />
       <div className="card__footer">
         <p className="card__description">
-          {type === "launch" ? item.details : item.description}
+          {type === "launch" ? data.details : data.description}
         </p>
       </div>
     </div>

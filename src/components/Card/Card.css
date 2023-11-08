@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   border-radius: 10px;
 }
@@ -9,4 +10,5 @@
   height: 328px;
   max-width: 325px;
   max-height: 328px;
+  border-radius: 10px;
 }
