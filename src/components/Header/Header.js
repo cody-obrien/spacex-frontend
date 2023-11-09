@@ -5,7 +5,8 @@ import Navigation from "../Navigation/Navigation";
 export default function Header() {
   return (
     <div className="header">
-      <img className="header__logo" src={logo} /> Here's a header
+      <img className="header__logo" src={logo} />
+      <p className="header__title">Here's a header</p>
       <Navigation />
     </div>
   );

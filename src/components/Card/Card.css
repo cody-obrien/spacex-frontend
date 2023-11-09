@@ -1,8 +1,9 @@
 .card {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  border-radius: 10px;
+  max-width: 325px;
+  max-height: 500px;
+  border: 1px solid black;
 }
 
 .card__image {
@@ -10,5 +11,13 @@
   height: 328px;
   max-width: 325px;
   max-height: 328px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__title {
+  border-radius: 10px 10px 0 0;
+}
+
+.card__footer {
+  overflow: hidden;
 }

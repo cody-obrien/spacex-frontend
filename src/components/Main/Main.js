@@ -8,18 +8,13 @@ export default function Main() {
   return (
     <div className="main">
       <h2>Here's a title for the main section</h2>
-      <div className="cards__section">
+      <section className="cards__section">
         {cardItemsContext.map((item) => {
-          console.log(cardItemsContext);
-          console.log(item);
-          console.log(item.type);
-          console.log(item.data[0]);
-          console.log(item.data[0].id);
           return (
             <Card key={item.data[0].id} data={item.data[0]} type={item.type} />
           );
         })}
-      </div>
+      </section>
     </div>
   );
 }
