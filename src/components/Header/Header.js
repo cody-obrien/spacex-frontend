@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       <img className="header__logo" src={logo} />
-      <p className="header__title">Here's a header</p>
+      <h1 className="header__title">SpaceX API Exploration</h1>
       <Navigation />
     </div>
   );

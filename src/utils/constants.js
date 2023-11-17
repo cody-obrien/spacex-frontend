@@ -283,4 +283,5 @@ const dragonList = [
   },
 ];
 
-export { rocketList, dragonList, launchList };
+const baseURL = "https://api.spacexdata.com/v4";
+export { rocketList, dragonList, launchList, baseURL };

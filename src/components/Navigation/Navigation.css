@@ -1,6 +1,30 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: black;
+  display: flex;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav__link-active {
+  border-bottom: 2px solid black;
+}
+
+.nav__item {
+  list-style-type: none;
 }
