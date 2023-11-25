@@ -13,17 +13,14 @@ import { getItems } from "../../utils/api.js";
 //context
 import { CardItemsContext } from "../../contexts/CardItemsContext.js";
 //consts
-import { rocketList, dragonList, launchList } from "../../utils/constants";
+import { RocketList, DragonList, LaunchList } from "../../utils/constants";
 
 function App() {
-  //temporary state before fetch functionality is implemented
   const [launches, setLaunches] = useState([]);
   const [rockets, setRockets] = useState([]);
   const [dragons, setDragons] = useState([]);
   const [cardItems, setCardItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
-  //while (fetch promise has not returned) .then(isloading=true), in jsx change render of main vs preloader
 
   //will need this function later:
   //const genNewItem(list) return item from that list
@@ -49,6 +46,9 @@ function App() {
         ];
         setCardItems(cards);
         setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
       });
   }, []);
 

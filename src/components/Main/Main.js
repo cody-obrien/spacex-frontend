@@ -6,15 +6,15 @@ export default function Main({ cards }) {
   const cardItemsContext = useContext(CardItemsContext);
 
   return (
-    <div className="main">
+    <main className="main">
       <h2 className="main__title">Launch, Rocket, Dragon</h2>
-      <section className="cards__section">
+      <section className="main__cards-section">
         {cards.map((item) => {
           return item.data ? (
             <Card key={item.data.id} data={item.data} type={item.type} />
           ) : null;
         })}
       </section>
-    </div>
+    </main>
   );
 }

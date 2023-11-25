@@ -11,6 +11,7 @@ export default function Card({ data, type }) {
             ? data.links.flickr.original[0]
             : data.flickr_images[0]
         }
+        alt={data.name}
       />
       <div className="card__footer">
         <p className="card__description">

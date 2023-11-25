@@ -5,7 +5,7 @@
   padding: 20px;
   text-align: center;
 }
-.cards__section {
+.main__cards-section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

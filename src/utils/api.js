@@ -1,4 +1,4 @@
-import { baseURL } from "./constants";
+import { BaseURL } from "./constants";
 
 const checkResponse = (response) => {
   if (!response.ok) {
@@ -9,7 +9,7 @@ const checkResponse = (response) => {
 };
 
 const getItems = (type) => {
-  return fetch(`${baseURL}/${type}`).then(checkResponse);
+  return fetch(`${BaseURL}/${type}`).then(checkResponse);
 };
 
 export { getItems };
