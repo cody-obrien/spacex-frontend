@@ -1,9 +1,9 @@
 import "./Main.css";
 import Card from "../Card/Card";
-import { useContext } from "react";
-import { CardItemsContext } from "../../contexts/CardItemsContext";
+// import { useContext } from "react";
+// import { CardItemsContext } from "../../contexts/CardItemsContext";
 export default function Main({ cards }) {
-  const cardItemsContext = useContext(CardItemsContext);
+  // const cardItemsContext = useContext(CardItemsContext);
 
   return (
     <main className="main">
