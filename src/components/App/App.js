@@ -13,7 +13,7 @@ import { getItems } from "../../utils/api.js";
 //context
 import { CardItemsContext } from "../../contexts/CardItemsContext.js";
 //consts
-import { RocketList, DragonList, LaunchList } from "../../utils/constants";
+// import { ROCKETLIST, DRAGONLIST, LAUNCHLIST } from "../../utils/constants";
 
 function App() {
   const [launches, setLaunches] = useState([]);

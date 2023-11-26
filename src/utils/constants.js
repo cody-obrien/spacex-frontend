@@ -1,4 +1,4 @@
-const RocketList = [
+const ROCKETLIST = [
   {
     height: {
       meters: 70,
@@ -124,7 +124,7 @@ const RocketList = [
   },
 ];
 
-const LaunchList = [
+const LAUNCHLIST = [
   {
     fairings: null,
     links: {
@@ -199,7 +199,7 @@ const LaunchList = [
   },
 ];
 
-const DragonList = [
+const DRAGONLIST = [
   {
     heat_shield: {
       material: "PICA-X",
@@ -283,5 +283,5 @@ const DragonList = [
   },
 ];
 
-const BaseURL = "https://api.spacexdata.com/v4";
-export { RocketList, DragonList, LaunchList, BaseURL };
+const BASEURL = "https://api.spacexdata.com/v4";
+export { ROCKETLIST, DRAGONLIST, LAUNCHLIST, BASEURL };
