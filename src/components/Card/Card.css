@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  width: auto;
   max-width: 325px;
   max-height: 500px;
   border: 1px solid black;
@@ -10,7 +11,7 @@
 }
 
 .card__image {
-  width: 325px;
+  width: auto;
   height: 328px;
   max-width: 325px;
   max-height: 328px;

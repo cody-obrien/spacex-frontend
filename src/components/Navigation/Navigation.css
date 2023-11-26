@@ -1,6 +1,7 @@
 .nav {
   font-weight: 700;
   font-size: 20px;
+
   line-height: 24px;
   margin: 0;
   padding: 0;
@@ -10,6 +11,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__link {
@@ -29,4 +32,10 @@
 
 .nav__item {
   list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+  .nav__link {
+    font-size: 0.75em;
+  }
 }
