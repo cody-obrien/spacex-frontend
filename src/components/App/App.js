@@ -50,7 +50,7 @@ function App() {
       .catch((err) => {
         console.error(err);
       });
-  }, [launches, rockets, dragons]);
+  }, []);
 
   useEffect(() => {
     const cards = [
