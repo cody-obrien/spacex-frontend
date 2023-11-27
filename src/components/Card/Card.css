@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 325px;
+  max-height: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.card__image {
+  width: auto;
+  height: 328px;
+  max-width: 325px;
+  max-height: 328px;
+  border-radius: 10px;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__footer {
+  -webkit-line-clamp: 8;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

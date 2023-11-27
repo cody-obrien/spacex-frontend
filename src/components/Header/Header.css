@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header__logo {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .header__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 1em;
+  }
+}
